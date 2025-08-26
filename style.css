@@ -1,3 +1,4 @@
+/* #region Base */
 body {
   margin: 0;
   background-color: #f7f7f7;
@@ -15,10 +16,18 @@ p {
   color: #6b6b6b;
 }
 
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ff8d64;
+  text-decoration: none;
+}
+
 .orangeText {
   color: #ff8d64;
 }
+/* #endregion */
 
+/* #region Hero */
 .hero {
   display: grid;
   grid-template-columns: auto;
@@ -44,10 +53,11 @@ p {
   z-index: 2;
   margin-top: 28vw;
   margin-left: 4vw;
+  box-shadow: #0000001a 0 0 50px 2px;
 }
 
 .heroFig h1 {
-  font-size: 2.5vw;
+  font-size: 2.8vw;
 }
 
 .heroFig p {
@@ -61,6 +71,7 @@ p {
   font-size: 1.3vw;
   font-weight: bold;
   padding: 0.6em 3.5em 0.8em 3.5em;
+  border: none;
 }
 
 .heroFig button img {
@@ -69,3 +80,35 @@ p {
   padding-right: 7px;
   width: 25%;
 }
+/* #endregion */
+
+/* #region Services */
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 6em 5em 2em 5em;
+  gap: 2.5em;
+}
+
+.services figure {
+  margin: 0;
+  margin-bottom: 4em;
+}
+
+.services img {
+  width: 60%;
+}
+
+.services h3 {
+  font-size: 1.8vw;
+}
+
+.services p {
+  font-size: 1.1vw;
+}
+
+.services a {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+/* #endregion */
