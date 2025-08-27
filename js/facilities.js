@@ -7,7 +7,7 @@ const facilitiesContent = /*html*/ `
         return /*html*/ `
         <article>
             <figure>
-                <img src=${elm.icon} alt="head image">
+                <img src=${elm.icon} alt="icon">
             </figure>
             <h3>${elm.headline}</h3>
             <p>${elm.text}</p>

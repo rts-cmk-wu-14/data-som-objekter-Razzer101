@@ -4,7 +4,7 @@ const servicesContent = services.map((elm) => {
     return /*html*/ `
 <article>
     <figure>
-        <img src=${elm.illustration} alt="head image">
+        <img src=${elm.illustration} alt="illustration image">
     </figure>
     <h3>${elm.headline}</h3>
     <p>${elm.text}</p>
