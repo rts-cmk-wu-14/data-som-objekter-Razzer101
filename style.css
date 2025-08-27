@@ -1,13 +1,13 @@
 /* #region Base */
 body {
   margin: 0;
-  margin-bottom: 10em;
   background-color: #f7f7f7;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
@@ -260,3 +260,79 @@ a {
   margin-top: auto;
 }
 /* #endregion */
+
+.footer {
+  background-color: #ebebeb;
+  padding: 4em 5em;
+  margin-top: 10em;
+}
+
+.gridOuterFooter{
+  display: grid;
+  grid-template-columns: 25% calc(75% - 8em);
+  gap: 8em;
+}
+
+.footerHeadline h2{
+  font-size: 3.3em;
+  margin: 0;
+}
+
+.footerHeadline h3{
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.gridInnerFooter {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3em;
+}
+
+.gridInnerFooter h3{
+  margin: 0;
+  margin-bottom: 1.2em;
+  font-size: 1.2em;
+}
+
+.gridInnerFooter ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gridInnerFooter li{
+  margin: 1.2em 0;
+}
+
+.gridInnerFooter a{
+  color: black;
+  font-size: .85em;
+}
+
+.footerBottom{
+  border-top: #c7c7c7 solid 1px;
+  margin-top: 5em;
+  padding-top: 1.5em;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6em;
+}
+
+.footerBottom h4{
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footerBottomGrid{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.footerBottomGrid a{
+  text-align: end;
+  color: black;
+  font-size: .9em;
+}
+
