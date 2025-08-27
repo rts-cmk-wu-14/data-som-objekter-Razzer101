@@ -157,3 +157,67 @@ a {
 }
 /* #endregion */
 
+/* #region Sites */
+.sites {
+  display: grid;
+  grid-template-columns: 23% calc(77% - 8em);
+  padding: 10em 5em 0 5em;
+  gap: 8em;
+}
+
+.sitesTitle h2 {
+  font-size: 2.2em;
+  margin: 0;
+  margin-bottom: 0.8em;
+}
+
+.sitesTitle p {
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.sitesTitle button {
+  background-color: #ff8d64;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: bold;
+  padding: 0.4em 4em 0.8em 3.5em;
+  border: none;
+}
+
+.sitesTitle button img {
+  position: relative;
+  top: 6px;
+}
+
+.gridSites {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2.5em;
+}
+
+.gridSites figure {
+  margin: 0;
+}
+
+.gridSites img {
+  height: 23em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gridSites h3 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 0.6em;
+}
+
+.gridSites p {
+  margin: 0.5em 0;
+}
+
+.gridSites a {
+  font-size: 1.05em;
+}
+/* #endregion */
