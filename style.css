@@ -78,9 +78,9 @@ a {
 
 .heroFig button img {
   position: relative;
-  top: 6px;
+  top: 3px;
   padding-right: 7px;
-  width: 25%;
+  width: 20%;
 }
 /* #endregion */
 
@@ -92,6 +92,10 @@ a {
   gap: 2.5em;
 }
 
+.services article:last-child{
+  grid-column-start: span 1;
+}
+
 .services figure {
   margin: 0;
   margin-bottom: 4em;
@@ -99,6 +103,7 @@ a {
 
 .services img {
   width: 60%;
+  aspect-ratio: 1/.75;
 }
 
 .services h3 {
@@ -261,26 +266,27 @@ a {
 }
 /* #endregion */
 
+/* #region Footer */
 .footer {
   background-color: #ebebeb;
   padding: 4em 5em;
   margin-top: 10em;
 }
 
-.gridOuterFooter{
+.gridOuterFooter {
   display: grid;
   grid-template-columns: 25% calc(75% - 8em);
   gap: 8em;
 }
 
-.footerHeadline h2{
+.footerHeadline h2 {
   font-size: 3.3em;
   margin: 0;
 }
 
-.footerHeadline h3{
+.footerHeadline h3 {
   margin: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .gridInnerFooter {
@@ -289,28 +295,28 @@ a {
   gap: 3em;
 }
 
-.gridInnerFooter h3{
+.gridInnerFooter h3 {
   margin: 0;
   margin-bottom: 1.2em;
   font-size: 1.2em;
 }
 
-.gridInnerFooter ul{
+.gridInnerFooter ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.gridInnerFooter li{
+.gridInnerFooter li {
   margin: 1.2em 0;
 }
 
-.gridInnerFooter a{
+.gridInnerFooter a {
   color: black;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
-.footerBottom{
+.footerBottom {
   border-top: #c7c7c7 solid 1px;
   margin-top: 5em;
   padding-top: 1.5em;
@@ -319,20 +325,417 @@ a {
   gap: 6em;
 }
 
-.footerBottom h4{
+.footerBottom h4 {
   display: inline-block;
   font-weight: normal;
   margin: 0;
 }
 
-.footerBottomGrid{
+.footerBottomGrid {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
 }
 
-.footerBottomGrid a{
+.footerBottomGrid a {
   text-align: end;
   color: black;
-  font-size: .9em;
+  font-size: 0.9em;
+}
+/* #endregion */
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+.heroFig {
+  margin-left: 6vw;
+  padding: 2.6em 8em 3em 3em;
 }
 
+.heroFig h1 {
+  font-size: 3vw;
+}
+  
+.heroFig p {
+  font-size: 1.4vw;
+}
+
+.services {
+  padding: 6em 3em 0 3em;
+  gap: 2em;
+}
+
+.services img {
+  width: 70%;
+}
+
+.services h3 {
+  font-size: 2.5vw;
+}
+
+.services p {
+  font-size: 1.5vw;
+}
+
+.services a {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.facilities {
+  padding: 10em 3em 0 3em;
+}
+
+.facilities h2 {
+  font-size: 2em;
+}
+
+.facilities div {
+  gap: 1.5em;
+}
+
+.sites {
+  grid-template-columns: 30% calc(70% - 2em);
+  padding: 10em 3em 0 3em;
+  gap: 2em;
+}
+
+.sitesTitle button {
+  font-size: 1.8vw;
+  padding: .2em 4em 1em 3em;
+}
+
+.gridSites {
+  gap: 2em;
+}
+
+.advantages {
+  padding: 10em 3em 0 3em;
+}
+
+.advantages div {
+  gap: 1.5em;
+}
+
+.footer {
+  padding: 4em 3em;
+}
+
+.gridOuterFooter {
+  grid-template-columns: 35% calc(65% - 2em);
+  gap: 2em;
+}
+.gridInnerFooter {
+  gap: 2em;
+}
+
+.footerBottom {
+  margin-top: 3em;
+  grid-template-columns: 35% auto;
+  gap: 1em;
+}
+}
+
+@media screen and (min-width:551px) and (max-width:768px) {
+.heroFig {
+  max-width: 50vw;
+  margin-left: 6vw;
+  padding: 2.6em 7em 3em 3em;
+}
+
+.heroFig h1 {
+  font-size: 4vw;
+}
+  
+.heroFig p {
+  font-size: 2vw;
+}
+
+.heroFig button {
+  font-size: 2vw;
+  padding: 0.6em 3.5em 0.8em 3.5em;
+}
+
+.services {
+  grid-template-columns: auto auto;
+  padding: 6em 3em 0 3em;
+  gap: 2em;
+}
+
+.services article:last-child{
+  margin-top: 2em;
+  grid-column-start: span 2;
+}
+
+.services img {
+  width: 70%;
+}
+
+.services article:last-child img{
+  width: 40%;
+}
+
+.services h3 {
+  font-size: 3vw;
+}
+
+.services p {
+  font-size: 1.8vw;
+}
+
+.services a {
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.facilities {
+  padding: 10em 3em 0 3em;
+}
+
+.facilities h2 {
+  font-size: 2em;
+}
+
+.facilities div {
+  grid-template-columns: auto auto;
+  gap: 1.5em;
+}
+
+.sites {
+  grid-template-columns: auto;
+  padding: 10em 3em 0 3em;
+  gap: 2em;
+}
+
+.sitesTitle button {
+  font-size: 2.4vw;
+  padding: .2em 4em 1em 3em;
+}
+
+.gridSites {
+  gap: 2em;
+}
+
+.advantages {
+  padding: 10em 3em 0 3em;
+}
+
+.advantages div {
+  grid-template-columns: auto auto;
+  gap: 1.5em;
+}
+
+.advantages div article:last-child{
+  margin-top: 2em;
+  grid-column-start: span 2;
+}
+
+.advantages figure {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 4em 3em;
+}
+
+.gridOuterFooter {
+  grid-template-columns: auto;
+  gap: 2em;
+}
+
+.footerHeadline h2 br{
+  display: none;
+}
+
+.gridInnerFooter {
+  gap: 2em;
+}
+
+.footerBottom {
+  margin-top: 3em;
+  grid-template-columns: 50% auto;
+  gap: 1em;
+}
+
+.footerBottomGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: end;
+}
+
+.footerBottomGrid a{
+  margin-bottom: 1.5em;
+}
+
+.footerBottomGrid a:last-child{
+  grid-column-end: span 2;
+}
+}
+
+@media screen and (max-width:550px) {
+.heroFig {
+  max-width: 70vw;
+  margin-left: 5vw;
+  padding: 1.5em 2em 2em 2em;
+}
+
+.heroFig h1 {
+  font-size: 7vw;
+}
+  
+.heroFig p {
+  font-size: 4vw;
+}
+
+.heroFig button {
+  font-size: 5vw;
+  padding: 0.6em 3.5em 0.8em 3.5em;
+}
+
+.services {
+  grid-template-columns: auto;
+  padding: 6em 3em 0 3em;
+  gap: 2em;
+}
+
+.services article{
+    margin-bottom: 2em;
+}
+
+.services article:last-child{
+  grid-column-start: span 1;
+}
+
+.services figure{
+  margin-bottom: 1em;
+}
+
+.services img {
+  width: 70%;
+}
+
+.services article:last-child img{
+  width: 70%;
+}
+
+.services h3 {
+  font-size: 7vw;
+}
+
+.services p {
+  font-size: 4vw;
+}
+
+.services a {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.facilities {
+  padding: 5em 3em 0 3em;
+}
+
+.facilities h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.facilities div {
+  grid-template-columns: auto;
+  gap: 1.5em;
+}
+
+.facilities article{
+  margin-bottom: 2em;
+}
+
+.facilities figure{
+  margin-bottom: 0;
+}
+
+.sites {
+  grid-template-columns: auto;
+  padding: 5em 3em 0 3em;
+  gap: 2em;
+}
+
+.sitesTitle button {
+  font-size: 2.4vw;
+  padding: .2em 4em 1em 3em;
+}
+
+.gridSites {
+  grid-template-columns: auto;
+  gap: 2em;
+}
+
+.advantages {
+  padding: 5em 3em 0 3em;
+}
+
+.advantages h2{
+  margin-bottom: 1em;
+  font-size: 1.8em;
+}
+
+.advantages div {
+  grid-template-columns: auto;
+  gap: 1.5em;
+}
+
+.advantages div article:last-child{
+  margin-top: 0;
+  grid-column-start: span 1;
+}
+
+.advantages figure {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 4em 3em;
+  margin-top: 5em;
+}
+
+.gridOuterFooter {
+  grid-template-columns: auto;
+  gap: 2em;
+}
+
+.gridOuterFooter{
+  text-align: center;
+}
+
+.footerHeadline h2 br{
+  display: none;
+}
+
+.gridInnerFooter {
+  grid-template-columns: auto;
+  gap: 2em;
+  text-align: center;
+}
+
+.footerBottom {
+  margin-top: 3em;
+  grid-template-columns: auto;
+  gap: 0;
+  text-align: center;
+}
+
+.footerBottom h4 {
+  margin-bottom: 1em;
+}
+
+.footerBottomGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 3em;
+}
+
+.footerBottomGrid a{
+  margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.footerBottomGrid a:last-child{
+  grid-column-start: span 2;
+}
+}
