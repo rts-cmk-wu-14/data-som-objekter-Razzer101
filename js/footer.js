@@ -23,7 +23,7 @@ const footerContent = /*html*/ `
                     ${elm.sectionList.map((listElm) => {
                         return /*html*/`
                         <li>
-                            <a href="#">${listElm.name}</a>
+                            <a href="${listElm.url}">${listElm.name}</a>
                         </li>
                         `
                     }).join("")}
@@ -37,7 +37,7 @@ const footerContent = /*html*/ `
     <h4>${footer.copyright}</h4>
     <div class="footerBottomGrid">
         ${footer.bottomList.map((elm)=>{
-            return /*html*/ `<a href="#">${elm.name}</a>`
+            return /*html*/ `<a href="${elm.url}">${elm.name}</a>`
         }).join("")}
     </div>
 </article>
